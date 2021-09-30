@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - MeleeWeapon
+  - ItemPick
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - postprocess
+  - Water
+  - UI
+  - player
+  - ItemPick
+  - Environment
+  - 'obstacle '
+  - MeleeWeapon
+  - Enemy
+  - SaberRed
+  - SaberBlue
+  - DestroyLayer
+  - KickRed
+  - KickBlue
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

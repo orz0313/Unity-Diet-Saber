@@ -1,2 +1,2 @@
-# Unity-Diet-Saber
-A game like Beat Saber but use webcam as input.
+# orz0313-UnityDietSaber
+A game like BeatSaber but use webcam as input.
