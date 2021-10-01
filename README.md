@@ -22,6 +22,12 @@ This is the prototype of a BeatSaber-like game in the process of design thinking
 4. Slice the cubes
 5. press ESC to go back to MainScene
 
+### Note
+1. Since the trained model "Resnet34_3inputs_448x448_20200609.onnx " could not support multi target estimation , keep only one person in the camera view.
+2. Keep your whole body in your camera. If your limbs stick out , it will make incorrect calculation.
+2.1 You could make your input image size rearranged by change the number "Video Background Scale" which is in the script "Vider Capture" of the Gameobject "MainTexture".
+3. To avoid misestimation , do not wear cloth which is the same color as background.
+
 ## License
 Non-commercial use
 
