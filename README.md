@@ -9,10 +9,10 @@ This is the prototype of a BeatSaber-like game in the process of design thinking
 1. Download .onnx file "Resnet34_3inputs_448x448_20200609.onnx "
 1.1 https://digital-standard.com/threedpose/models/Resnet34_3inputs_448x448_20200609.onnx
 
-2. Make a reference to BarracudaRunner.NN_Model
-2.1 Put your file "Resnet34_3inputs_448x448_20200609.onnx" in the path DietSaber/Assets/Scripts/3DPose/Model
-2.2 Open the PlayScene in DietSaber/Assets/Scenes
-2.3 Find and drag the .onnx file into the "NN Model" slot in Gameobject named "BarracudaRunner" in Inspector view.
+2. Make a reference to BarracudaRunner.NN_Model</br>
+2.1 Put your file "Resnet34_3inputs_448x448_20200609.onnx" in the path DietSaber/Assets/Scripts/3DPose/Model</br>
+2.2 Open the PlayScene in DietSaber/Assets/Scenes</br>
+2.3 Find and drag the .onnx file into the "NN Model" slot in Gameobject named "BarracudaRunner" in Inspector view.</br>
 
 ## Tutorial
 
@@ -23,10 +23,10 @@ This is the prototype of a BeatSaber-like game in the process of design thinking
 5. press ESC to go back to MainScene
 
 ### Note
-1. Since the trained model "Resnet34_3inputs_448x448_20200609.onnx " could not support multi target estimation , keep only one person in the camera view.
-2. Keep your whole body in your camera. If your limbs stick out , it will make incorrect calculation.
-2.1 You could make your input image size rearranged by change the number "Video Background Scale" which is in the script "Vider Capture" of the Gameobject "MainTexture".
-3. To avoid misestimation , do not wear cloth which is the same color as background.
+1. Since the trained model "Resnet34_3inputs_448x448_20200609.onnx " could not support multi target estimation , keep only one person in the camera view.</br>
+2. Keep your whole body in your camera. If your limbs stick out , it will make incorrect calculation.</br>
+2.1 You could make your input image size rearranged by change the number "Video Background Scale" which is in the script "Vider Capture" of the Gameobject "MainTexture".</br>
+3. To avoid misestimation , do not wear cloth which is the same color as background.</br>
 
 ## License
 Non-commercial use
