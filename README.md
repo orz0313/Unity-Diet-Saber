@@ -3,6 +3,7 @@ A game like BeatSaber but use webcam as input.
 
 ## Outline
 This is the prototype of a BeatSaber-like game in the process of design thinking , which use webcam and Barracuda to capture and calculate your motion.</br>
+※You will need webcamera to input your image</br>
 ※Without GPU, it does not work fine basically
 
 ## Install
