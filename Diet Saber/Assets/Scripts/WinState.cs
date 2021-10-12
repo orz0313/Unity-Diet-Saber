@@ -25,7 +25,7 @@ public class WinState : StateMachineBehaviour
         // animator.gameObject.transform.rotation = Quaternion.identity;
 
         Physics.IgnoreLayerCollision(6,9,false);
-        // ThirdPersonController.enabled = true;
+        ThirdPersonController.enabled = true;
         VNectModel.SetState(VNectModel.PreviousState);
         // FacePoseEstimation.SetisfaceupdatingTrue();         
     }

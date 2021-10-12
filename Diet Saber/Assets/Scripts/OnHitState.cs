@@ -21,7 +21,7 @@ public class OnHitState : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         Physics.IgnoreLayerCollision(6,9,false);
-        // ThirdPersonController.enabled = true;
+        ThirdPersonController.enabled = true;
         VNectModel.SetState(VNectModel.PreviousState);
         // FacePoseEstimation.SetisfaceupdatingTrue();       
     }

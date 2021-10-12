@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManagement : MonoBehaviour
 {
+    public static GameManagement instance;
     float waitfortimebeforeint = 10f;
     [SerializeField] SpawnKickCubes SpawnKickCubes;
     [SerializeField] SpawnSlashCubes SpawnSlashCubes;
@@ -13,7 +14,11 @@ public class GameManagement : MonoBehaviour
     AudioSource AudioSource;
     void Start()
     {
+        instance = this;
+        
         AudioSource = GetComponent<AudioSource>();
+
+        AudioSource.clip = SceneManage.instance.playmusic;
         StartCoroutine(Inti(waitfortimebeforeint));
     }
     void Update() 
