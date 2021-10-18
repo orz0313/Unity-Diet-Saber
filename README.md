@@ -20,9 +20,10 @@ This is the prototype of a BeatSaber-like game in the process of design thinking
 
 1. Open the MainScene in DietSaber/Assets/Scenes
 2. Start Runtime
-3. Click the Start button to load PlayScene
-4. Slice the cubes
-5. press ESC to go back to MainScene
+3. Select background music(you can put your mp3 to the address "Assets\Resources\Mp3")
+4. Click the Start button to load PlayScene
+5. Slice the cubes
+6. press ESC to go back to MainScene
 
 ### Note
 1. Since the trained model "Resnet34_3inputs_448x448_20200609.onnx " could not support multi target estimation , keep only one person in the camera view.</br>
