@@ -5,29 +5,56 @@ using UnityEngine.SceneManagement;
 
 public class GameManagement : MonoBehaviour
 {
-    public static GameManagement instance;
     float waitfortimebeforeint = 10f;
     [SerializeField] SpawnKickCubes SpawnKickCubes;
     [SerializeField] SpawnSlashCubes SpawnSlashCubes;
     [SerializeField] Animator animator;
     [SerializeField] VNectModel VNectModel;
+    [SerializeField] GameObject UIMenu;
     AudioSource AudioSource;
-    void Start()
+    void Awake()
     {
-        instance = this;
         
         AudioSource = GetComponent<AudioSource>();
 
-        AudioSource.clip = SceneManage.instance.playmusic;
+        AudioSource.clip = SceneManage.SceneManageinstance.playmusic;
         StartCoroutine(Inti(waitfortimebeforeint));
     }
     void Update() 
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene(0);
+            OpenMenu();
         }
     }
+
+    void OpenMenu()
+    {
+        if(Time.timeScale != 0)
+        {
+            Time.timeScale = 0;
+            AudioSource.Pause();
+        }
+
+        UIMenu.SetActive(true);        
+    }
+    public void Backtogame()
+    {
+        Time.timeScale = 1;
+        AudioSource.Play();
+        UIMenu.SetActive(false);
+    }
+
+    public void Backtomenu()
+    {
+        UIMenu.SetActive(false);
+
+        SceneManage.SceneManageinstance.SetLoadScene(0);
+        SceneManager.LoadScene(1);
+
+        Time.timeScale = 1;
+    }
+
     IEnumerator Inti(float f)
     {
         yield return new WaitForSeconds(f);

@@ -7,13 +7,14 @@ using UnityEngine.SceneManagement;
 
 public class SceneManage : MonoBehaviour
 {
-    public static SceneManage instance;
+    public static SceneManage SceneManageinstance;
     [SerializeField] Dropdown Dropdown;
     List<AudioClip> Music;
     public AudioClip playmusic;
-    private void Awake() 
+    public int SceneToLoad = 0;
+    void Awake() 
     {
-        instance = this;
+        SceneManageinstance = this;
         
         Dropdown.options.Clear();
         Music = Resources.LoadAll("Mp3",typeof(Object)).Cast<AudioClip>().ToList();
@@ -23,6 +24,12 @@ public class SceneManage : MonoBehaviour
             Dropdown.options.Add(new Dropdown.OptionData(AudioClip.name));
         }
         Dropdown.onValueChanged.AddListener(delegate {Dropdownmusicselected(Dropdown);});
+
+
+    }
+    public void SetLoadScene(int index)
+    {
+        SceneToLoad = index;
     }
     
 
@@ -39,6 +46,7 @@ public class SceneManage : MonoBehaviour
     
     public void ToPlayScene()
     {
+        SetLoadScene(2);
         SceneManager.LoadScene(1);
     }
 }

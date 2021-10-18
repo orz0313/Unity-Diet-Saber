@@ -1994,7 +1994,7 @@ GameObject:
   - component: {fileID: 1881830605}
   - component: {fileID: 1881830604}
   m_Layer: 0
-  m_Name: SceneManagement
+  m_Name: SceneManegement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
