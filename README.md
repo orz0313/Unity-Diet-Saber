@@ -31,6 +31,8 @@ This is the prototype of a BeatSaber-like game in the process of design thinking
 2.1 You could make your input image size rearranged by change the number "Video Background Scale" which is in the script "Video Capture" of the Gameobject "MainTexture".</br>
 3. To avoid misestimation , do not wear cloth which is the same color as background.</br>
 
+※Seems that GPU memory leak leads to crash during scene transfers and it could not be easily fixed by manually dispose,not sure this problem is caused by Barracuda workflow or Unity Editor version.
+
 ## License
 Non-commercial use
 
